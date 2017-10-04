@@ -1,0 +1,54 @@
+Abrir la consola de windows o GitBash ubicado en el proyecto y escribr lo siguiente.
+
+npm init --> crea el archivo package.json que tiene toda la configuración para nuestro proyecto
+npm install lite-server --save-dev  ---> permite que nuestra aplicación corra desde el servidor
+npm install bootstrap@3 --save     ---> Agrega bootstrap a nuestro proyecto, dentro de la carpeta node_modules
+
+en el archivo package.json reemplazar la parte que dice "scripts" por
+
+"scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+
+para que al correr el proyecto, sepa que debe ejecutarse por lite-server
+
+*** npm start --> Ejecuta el proyecto y lo abre en el navegador, normalmente en el puerto :3000
+
+
+crear archivo con nombre
+.gitignore
+dentro escribir node_modules  --> cuando hacemos commit con git, todo lo que esté en .gitignore, no será commiteado
+
+
+configurar git en nuestra máquina
+git config --global user.name "Marco Paredes"
+git config --global user.email = "marcop_93_04@hotmail.com"
+
+----------------------------------------------------
+
+Abrimos otra consola de windows o GitBash y nos ubicamos dentro de nuestro proyecto.
+
+git init --> Inicia git, solo se hace la primera vez que configuramos git para nuestro proyecto.
+** git status --> muestra los archivos modificados, en letras rojas se ve cuando las modificaste y en letras verdes se ve cuando ya están agregados.
+*** git add . --> agrega todos los archivos que hemos modificado
+   >>>>>>> git add nombre-archivo --> (opcional)  agrega el archivo especificado, esto se usa solo si quiees agregar un archivo específico
+*** git commit -m "un comentario"  --> guarda los archivos en nuestro repositorio git
+
+git log --> (opcional)  muestra los commits que hicimos, solo si quieres ver los commits
+
+-------------------------------------------------------
+
+---Vincular con github
+git remote add origin https://github.com/MarcoParedes/myFirstRepository.git 
+-----> vincula nuestra proyecto local con nuestro repositorio github, 
+esto se hace la primera vez, las sigientes ya sabe a qué repositorio agregar los commits
+
+*** git push origin nombreRama --> para agregar nuestros cambios al repositorio github
+
+nombreRama => normalmente es "master" , a menos que crees otra rama
+
+
+
+

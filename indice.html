@@ -19,30 +19,46 @@
     <![endif]-->
   </head>
   <body>
-   
+  
+    <div class="container">
+      <br>
       <form action="" class="">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="" id="nombre" placeholder="Nombre:">
+      
+        <div class="form-group">
+          <label for="nombre">Nombre:</label> 
+          <input class="form-control" type="text" id="nombre" placeholder="Nombre:">
+      
+     </div>
+       
+        <div class="form-group has-error">
 
-        <label for="opcion">Elige una opcion:</label>
-        <select>
-          <option value="">Opcion #1</option>
-          <option value="">Opcion #2</option>
-          <option value="">Opcion #3</option>
-          <option value="">Opcion #4</option>
-          <option value="">Opcion #5</option>
-        </select>
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea class="" id="mensaje" placeholder="Escribe tu mensaje:"></textarea>
-
-        <label for="archivo">Arcivo:</label>
-        <input type="file" id="archivo">
-        <p class="">Maximo 50MB</p>
-
+           <label for="option" class="control-label">Elige una opcion:</label>
+            <select class="form-control" name="" id="option">
+              <option value="">Opcion #1</option>
+              <option value="">Opcion #2</option>
+              <option value="">Opcion #3</option>
+              <option value="">Opcion #4</option>
+              <option value="">Opcion #5</option>
+            </select>
+        </div>
+       
+        <div class="form-group">
+            <label class="control-label" for="mensaje">Mensaje:</label>
+            <textarea class="form-control" id="mensaje" placeholder="Escribe tu mensaje:"></textarea>
+        </div>
+      
+        <div class="form-group">
+            <label for="archivo">Archivo:</label>
+            <input type="file" id="archivo">
+            <p class="">Maximo 50MB</p>
+        </div>
+        
         <button class="">Enviar</button>
       </form>
-    
+    </div>
+
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
